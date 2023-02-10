@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { DataService } from './services/dataService';
-import { config } from './config/appConfig';
-import { User } from './model/User';
-import { Search } from './sharedComponents/search'
-import { SearchObj } from './services/dataService';
+import { DataService } from '../../services/dataService';
+import { config } from '../../config/appConfig';
+import { User } from '../../model/User';
+import { Search } from '../../sharedComponents/search'
+import { SearchObj } from '../../services/dataService';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: './home.html',
+  styleUrls: ['./home.scss']
 })
-export class AppComponent {
+export class Home {
   title: string = 'basera';
   users: User[] = []
 
