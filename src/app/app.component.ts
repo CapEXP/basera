@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { DataService } from './services/dataService';
 import { config } from './config/appConfig';
 import { User } from './model/User';
+import { Search } from './sharedComponents/search'
 
 @Component({
   selector: 'app-root',

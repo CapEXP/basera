@@ -5,15 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DataService } from './services/dataService';
 import { HttpClientModule } from '@angular/common/http';
+import { Search } from './sharedComponents/search';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Search
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
     AppRoutingModule
+    
   ],
   providers: [
     DataService
