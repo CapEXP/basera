@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { DataService } from './services/dataService';
+import { AppRoutingModule } from '../app-routing.module';
+import { Home } from '../pages/home/home';
+import { DataService } from '../services/dataService';
 import { HttpClientModule } from '@angular/common/http';
-import { Search } from './sharedComponents/search';
+import { Search } from '../sharedComponents/search';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    Search
+    Home,
+    Search,
   ],
   imports: [
     HttpClientModule,
@@ -21,6 +21,6 @@ import { Search } from './sharedComponents/search';
   providers: [
     DataService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [Home]
 })
-export class AppModule { }
+export class HotelModule { }
