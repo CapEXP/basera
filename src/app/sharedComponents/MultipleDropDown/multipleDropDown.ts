@@ -10,17 +10,17 @@ export class MultipleDropDown {
     adults = 0;
     children = 0;
 
-    setCounter(counter: any, roomType: any) {
+    setRooms(roomType: any) {
         switch (roomType) {
             case 'increment':
-                counter++
+                this.rooms++
                 break;
             case 'decrement':
-                if(counter > 0)
-                counter--
+                if(this.rooms > 0)
+                this.rooms--
                 break;
             default:
-                counter
+                this.rooms
                 break;
         }
     }
