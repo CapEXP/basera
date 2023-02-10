@@ -3,6 +3,7 @@ import { DataService } from './services/dataService';
 import { config } from './config/appConfig';
 import { User } from './model/User';
 import { Search } from './sharedComponents/search'
+import { SearchObj } from './services/dataService';
 
 @Component({
   selector: 'app-root',
@@ -20,5 +21,8 @@ export class AppComponent {
       .subscribe((response: any) => {
         this.users = response.users
       });
+  }
+  setSearch(search: SearchObj): void {
+    this.dataService.setSearch(search)
   }
 }

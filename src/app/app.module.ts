@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { DataService } from './services/dataService';
 import { HttpClientModule } from '@angular/common/http';
 import { Search } from './sharedComponents/search';
+import { MultipleDropDown } from './sharedComponents/MultipleDropDown/multipleDropDown';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Search
+    Search,
+    MultipleDropDown
   ],
   imports: [
     HttpClientModule,
