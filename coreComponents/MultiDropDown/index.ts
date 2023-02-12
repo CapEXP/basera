@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'multi-dropdown',
   templateUrl: './template.html'
 })
+
 export class MultiDropDown {
   constructor() { }
     rooms = 0;

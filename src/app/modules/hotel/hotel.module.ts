@@ -1,27 +1,23 @@
+// Angular module
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from '../../app-routing.module';
-import { Home } from '../../pages/home/home';
-import { DataService } from '../../services/dataService';
 import { HttpClientModule } from '@angular/common/http';
-import { Search } from '../../sharedComponents/search';
-import { TopBanner } from 'src/app/customComponents/topBanner';
 import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MultiDropDown } from 'src/app/sharedComponents/MultiDropDown';
+
+// app route
+import { AppRoutingModule } from '../../app-routing.module';
+
+// services
+import { hotelServices } from './registerServices';
+
+// components
+import { decls, bsComp } from './registerComponents';
 
 @NgModule({
-    declarations: [
-        Home,
-        Search,
-        TopBanner,
-        MultiDropDown
-    ],
-    providers: [
-        DataService
-    ],
-    bootstrap: [Home],
+    declarations: decls, // declare component in registerComponents
+    providers: hotelServices, // inject service in registerServices
+    bootstrap: [bsComp],
     imports: [
         HttpClientModule,
         BrowserModule,
