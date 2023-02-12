@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { DataService } from '../../services/dataService';
-import { config } from '../../config/appConfig';
+import { config } from '../../../config/appConfig';
 import { User } from '../../model/User';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './home.html',
-  styleUrls: ['./home.scss']
+  templateUrl: './template.html',
+  styleUrls: ['./style.scss']
 })
 export class Home {
   title: string = 'basera';

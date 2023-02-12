@@ -1,7 +1,7 @@
 import { Type } from '@angular/core';
 
 /** import custom component */
-import { Home } from '../../pages/home/home';
+import { Home } from '../../pages/home';
 import { TopBanner } from '../../customComponents/topBanner';
 
 /** 
