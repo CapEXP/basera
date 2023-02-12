@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { DataService } from '../../services/dataService';
 import { config } from '../../config/appConfig';
 import { User } from '../../model/User';
-import { Search } from '../../sharedComponents/search'
 
 @Component({
   selector: 'app-root',
@@ -14,6 +13,7 @@ export class Home {
   users: User[] = []
 
   constructor(private dataService: DataService) { }
+
 
   ngOnInit(): void {
     this.dataService.getData(`${config.user}`)

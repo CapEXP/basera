@@ -1,5 +1,7 @@
 # Basera
 ## prototype: https://booking.webestica.com/index.html
+## https://material.angular.io/components
+bootstrap 5.3.0
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
