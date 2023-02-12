@@ -10,15 +10,15 @@ import { User } from '../../model/User';
 })
 export class Home {
   title: string = 'basera';
-  users: User[] = []
+  layout: any = {}
 
   constructor(private dataService: DataService) { }
 
 
   ngOnInit(): void {
-    this.dataService.getData(`${config.user}`)
+    this.dataService.getData(`${config.metadata}/hotel/layout/home`)
       .subscribe((response: any) => {
-        this.users = response.users
+        this.layout = response
       });
   }
 }

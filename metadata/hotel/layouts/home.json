@@ -1,0 +1,21 @@
+{
+    "name": "home",
+    "layout": {
+        "bs_column": 12,
+        "skeleton": {
+            "header": {
+                "rows": 2,
+                "box": { "margin": 1, "border": "1px solid" }
+            },
+            "body": {
+                "rows": 6,
+                "box": { "margin": 1, "border": "1px solid" }
+
+            },
+            "footer": {
+                "rows": 1,
+                "box": { "margin": 1, "border": "1px solid" }
+            }
+        }
+    }
+}

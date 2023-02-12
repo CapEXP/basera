@@ -19,6 +19,6 @@ export class DataService {
     logger = new Logger()
 
     getData(url: string): any {
-       return this.http.get<Response>(`${config.env}${url}`);
+       return this.http.get<Response>(url);
     }
 }
