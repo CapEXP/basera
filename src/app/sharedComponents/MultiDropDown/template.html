@@ -1,0 +1,16 @@
+<hr/>
+<div class="container">
+    <div>
+        Guests: {{ adults + children }} | Rooms: {{ rooms }} <br/>
+        Adults: &nbsp;&nbsp;&nbsp;<button (click)="setAdults('increment')"> + </button>
+        {{ adults }}
+        <button (click)="setAdults('decrement')"> - </button> <br/>
+        Children: <button (click)="setChildren('increment')"> + </button>
+        {{ children }}
+        <button (click)="setChildren('decrement')"> - </button> <br/>
+        Rooms: &nbsp;&nbsp;<button (click)="setRooms('increment')"> + </button>
+        {{ rooms }} <button (click)="setRooms('decrement')"> - </button> <br/>
+    </div>
+</div>
+<hr/>
+<hr/>

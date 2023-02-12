@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TopBanner } from './topBanner';
+import { TopBanner } from '.';
 
 describe('TopBanner', () => {
   let component: TopBanner;

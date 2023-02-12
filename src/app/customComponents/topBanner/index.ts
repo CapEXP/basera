@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'top-banner',
-  templateUrl: './topBanner.html',
-  styleUrls: ['./topBanner.scss']
+  templateUrl: './template.html',
+  styleUrls: ['./style.scss']
 })
 export class TopBanner {
 

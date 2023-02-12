@@ -6,15 +6,17 @@ import { Home } from '../../pages/home/home';
 import { DataService } from '../../services/dataService';
 import { HttpClientModule } from '@angular/common/http';
 import { Search } from '../../sharedComponents/search';
-import { TopBanner } from 'src/app/customComponents/topBanner/topBanner';
+import { TopBanner } from 'src/app/customComponents/topBanner';
 import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MultiDropDown } from 'src/app/sharedComponents/MultiDropDown';
 
 @NgModule({
     declarations: [
         Home,
         Search,
-        TopBanner
+        TopBanner,
+        MultiDropDown
     ],
     providers: [
         DataService
