@@ -5,15 +5,10 @@
 </style>
 
 <!-- Toolbar -->
-<page></page>
-<div class="toolbar" role="banner">
-  <img src="../../../assets/images/logo.svg" alt="logo" class="logo" />
-  <top-banner></top-banner>
-  <multi-dropdown></multi-dropdown>
-  
-<div class="content" role="main">
-  <!-- Footer -->
-  <footer></footer>
+<div ngClass="{{layout?.bs_column}} container bgGrey">
+  <div ngClass="{{layout?.skeleton?.header?.container}}">Header</div>
+  <page [props]="layout"></page>
+  <div ngClass="{{layout?.skeleton?.footer?.container}}">Footer</div>
 </div>
 
 <router-outlet></router-outlet>
