@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { config } from '../config/appConfig';
+import { config } from '../../config/appConfig';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { Logger } from '../Logger';
@@ -40,7 +40,7 @@ export class DataService {
     logger = new Logger()
 
     getData(url: string): any {
-       return this.http.get<Response>(`${config.env}${url}`);
+       return this.http.get<Response>(url);
     }
     setSearch(search: SearchObj) {
       this.search = search
