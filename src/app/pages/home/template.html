@@ -1,19 +1,21 @@
 <style>
-  .logo {
-    height: 30px;
-  }
+    .logo {
+        height: 30px;
+    }
 </style>
 
 <!-- Toolbar -->
-<page></page>
-<div class="toolbar" role="banner">
-  <img src="../../../assets/images/logo.svg" alt="logo" class="logo" />
-  <top-banner></top-banner>
-  <multi-dropdown></multi-dropdown>
-  
-<div class="content" role="main">
-  <!-- Footer -->
-  <footer></footer>
-</div>
+<div class="container">
+    <!-- <page></page> -->
+    <!-- <navigationBar></navigationBar> -->
+    <div class="toolbar" role="banner">
+        <top-banner></top-banner>
+        <multi-dropdown></multi-dropdown>
+    </div>
+    <div class="content" role="main">
+        <!-- Footer -->
+        <footer>footer</footer>
+    </div>
 
-<router-outlet></router-outlet>
+    <router-outlet></router-outlet>
+</div>
