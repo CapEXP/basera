@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { DataService } from '../../services/dataService';
+import { DataService, SearchObj } from '../../services/dataService';
 import { config } from '../../../config/appConfig';
-import { User } from '../../model/User';
 
 @Component({
   selector: 'app-root',
@@ -20,5 +19,8 @@ export class Home {
       .subscribe((response: any) => {
         this.layout = response
       });
+  }
+  setSearch(search: SearchObj): void {
+    this.dataService.setSearch(search)
   }
 }

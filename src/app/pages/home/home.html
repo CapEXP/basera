@@ -1,0 +1,18 @@
+<style></style>
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">Add Banner here</div>
+
+<div class="content" role="main">
+  <search></search>
+  <multipleDropDown/>
+  Find the top Hotels nearby.
+  <p *ngFor="let user of users;">
+    <b>Name</b>: {{ user.name }}
+    <b>Email</b>: {{ user.email }}
+  </p>
+  <!-- Footer -->
+  <footer></footer>
+</div>
+
+<router-outlet></router-outlet>
