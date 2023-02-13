@@ -1,20 +1,27 @@
 {
     "name": "home",
     "layout": {
-        "bs_column": 12,
+        "bs_column": "col-12",
         "skeleton": {
             "header": {
-                "rows": 2,
-                "box": { "margin": 1, "border": "1px solid" }
+                "container": "margin10 height100 row",
+                "widgets": [
+                    {
+                        "name": "banner" 
+                    }
+                ]
             },
-            "body": {
-                "rows": 6,
-                "box": { "margin": 1, "border": "1px solid" }
+            "content": {
+                "container": "margin1 border1 height600",
+                "widgets": [
+                    {
+                        "name": "banner" 
+                    }
+                ]
 
             },
             "footer": {
-                "rows": 1,
-                "box": { "margin": 1, "border": "1px solid" }
+                "container": "margin1 border1 height100"
             }
         }
     }
